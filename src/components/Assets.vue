@@ -10,20 +10,11 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, onMounted, toValue, type MaybeRefOrGetter } from 'vue'
 import { Assets } from '../lib/domain'
 
-const props = defineProps({
+defineProps({
   assets: { type: Assets, required: true }
 })
-
-// function useTest(assets: MaybeRefOrGetter<Assets>) {
-//   const ids = computed(() => [...toValue(assets).keys()])
-
-//   return { ids }
-// }
-
-// const { ids } = useTest(() => props.assets)
 </script>
 
 <style lang="postcss" scoped>
