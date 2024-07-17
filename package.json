@@ -1,0 +1,32 @@
+{
+  "name": "presentation",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "Matthias Hryniszak <padcom@gmail.com>",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  },
+  "devDependencies": {
+    "@padcom/eslint-config-vue": "^0.8.0",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vue/tsconfig": "^0.5.1",
+    "eslint": "^8.57.0",
+    "vite": "^5.3.4",
+    "vue": "^3.4.31"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@padcom/eslint-config-typescript"
+    ],
+    "rules": {
+      "no-useless-constructor": 0
+    }
+  }
+}
