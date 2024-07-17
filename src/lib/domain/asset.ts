@@ -6,6 +6,10 @@ export class Asset {
 }
 
 export class Assets extends Map<string, Asset> {
+  get ids() {
+    return [...this.keys()].map(id => `ID=${id}`)
+  }
+
   public summary() {
     return [...this.values()].reduce((acc, asset) => acc + asset.value, 0)
   }

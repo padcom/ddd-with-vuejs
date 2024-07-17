@@ -21,6 +21,8 @@
 </template>
 
 <script lang="ts" setup>
+import { reactive } from 'vue'
+
 import { Company } from '../lib/domain'
 
 import CompanyName from './CompanyName.vue'

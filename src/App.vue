@@ -25,7 +25,7 @@ import {
 import HiringProcess from './components/HiringProcess.vue'
 import CompanyInformation from './components/CompanyInformation.vue'
 
-const company = ref<Company>(new Company('Damage inc.', new Person('Jane', 'Smith', 42), {
+const company = ref(new Company('Damage inc.', new Person('Jane', 'Smith', 42), {
   assets: new Assets([
     ['ceo-laptop', new Asset('mac-book-air', 3000)],
     ['printer01', new Asset('printer', 1000)],
